@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+
+		.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+
+
+		.item {
+			width: 700px;
+			height: 140px;
+			border: 2px solid black;
+			margin-bottom: 20px;
+		} .item > * { float: left; }
+		.selected {background: yellow;}
+
+		img {
+			width: 200px;
+			padding-top: 15px;
+
+		}
+
+		h2 {
+			font-size: 30px;
+			margin: 12px 0 0 0;
+		}
+
+		.item {
+			font-size: 20px;
+		} .full {font-size: 14px;}
+
+		.price > * {
+			float: left;
+		}
+
+		.num {
+			font-size: 30px;
+			color: #090;
+			background: #afa;
+			border-radius: 5px;
+			margin-top: 14px;
+			margin-left: 130px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="item clearfix">
+		<img src="https://img1.autospot.ru/images/bmw/x5/583174" alt="">
+		
+		<div class="info">				
+			<h2><a href="">BMW x5 Series</a></h2>
+			<p>Good car in good conditions</p>
+			<p class="full">City: <b>Aktobe</b>, Type: <b>Sedan</b>, <b>4xWD</b></p>
+		</div>
+		<div class="price clearfix">
+			<p><b>for: </b></p>		
+			<p class="num">30.000$</p>
+		</div>
+	</div>
+	<div class="item clearfix selected">
+		<img src="https://img1.autospot.ru/images/bmw/x5/583174" alt="">
+		
+		<div class="info">				
+			<h2><a href="">Porche Cayenne</a></h2>
+			<p>The best of all cars</p>
+			<p class="full">City: <b>Almaty</b>, Type: <b>Hatchbak</b>, <b>2xWD</b></p>
+		</div>
+		<div class="price clearfix">
+			<p><b>for: </b></p>		
+			<p class="num">30.000$</p>
+		</div>
+	</div>
+	<div class="item clearfix">
+		<img src="https://img1.autospot.ru/images/bmw/x5/583174" alt="">
+		
+		<div class="info">				
+			<h2><a href="">Audi A8</a></h2>
+			<p>Good car in good conditions</p>
+			<p class="full">City: <b>Astana</b>, Type: <b>Sedan</b>, <b>2xWD</b></p>
+		</div>
+		<div class="price clearfix">
+			<p><b>for: </b></p>		
+			<p class="num">18.000$</p>
+		</div>
+	</div>
+
+</body>
+</html>
